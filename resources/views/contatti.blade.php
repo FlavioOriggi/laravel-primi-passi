@@ -28,7 +28,13 @@
 
                 <h2>{{ $title}}</h2>
 
-                
+                <ul>                    
+                    @foreach ($nomi as $nome)
+                        <li>
+                            {{ $nome }}
+                        </li>
+                    @endforeach
+                </ul>
             </div>
         
     </body>
